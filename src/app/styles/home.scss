@@ -1,0 +1,210 @@
+@use './breakpoints' as u;
+@use './variables' as *;
+
+.homepage-container {
+    width: 100%;
+}
+.hero {
+    width: 100%;
+    padding: 40px 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include u.breakpoint(md) {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 100px;
+    }
+    .left {
+        display: none;
+        @include u.breakpoint(md) {
+            display: block;
+            width: 10%;
+        }
+    }
+    .right {
+        width: 100%;
+        height: max-content;
+        background-color: #23283d90;
+        padding: 40px 20px;
+        @include u.breakpoint(md) {
+            width: 600px;
+            padding: 60px 60px;
+        }
+        h1 {
+            font-family: var(--font-NotoSerifDevanagari), sans-serif;
+            font-weight: 300;
+            font-size: 36px;
+            color: #a4c7cd;
+            line-height: 1.1;
+            letter-spacing: 2px;
+                @include u.breakpoint(md) {
+                font-size: 66px;
+                }
+        }
+        h3 {
+            font-family: var(--font-NotoSerifDevanagari), sans-serif;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 1.1;
+            color: $white;
+            margin-top: 30px;
+            @include u.breakpoint(md) {
+                font-size: 27px;
+                margin-top: 50px;
+            }    
+        }
+        p {
+            font-family: var(--font-Poppins), sans-serif;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 1.6; 
+            color: $white;
+            margin-top: 30px;    
+        }
+        .btn-one {
+            width: 100%;
+            height: 70px;
+            background-color: #a4c7cd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 30px; 
+            span {
+                font-family: var(--font-NotoSerifDevanagari), sans-serif;
+                font-weight: 300;
+                font-size: 18px;
+                text-align: center;
+                line-height: 1.1;
+                color: $black;
+                @include u.breakpoint(md) {
+                    font-size: 22px;
+                }                 
+            }
+        }
+    }
+}
+.about-section {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: #23283d;
+    @include u.breakpoint(md) {
+        padding: 100px 100px;
+    }
+    .top {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        @include u.breakpoint(md) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .left {
+            width: 100%;
+            @include u.breakpoint(md) {
+                width: 47%;
+            }
+            h1 {
+                font-family: var(--font-NotoSerifDevanagari), sans-serif;
+                font-weight: 300;
+                font-size: 36px;
+                color: #a4c7cd;
+                line-height: 1.1;
+                letter-spacing: 2px;
+                    @include u.breakpoint(md) {
+                    font-size: 66px;
+                    }
+            }
+            p {
+                font-family: var(--font-Poppins), sans-serif;
+                font-weight: 300;
+                font-size: 18px;
+                color: $white;
+                margin-top: 30px;
+                line-height: 1.6;  
+            }
+            .book-img {
+                margin-top: 30px;
+                width: 100%;
+                @include u.breakpoint(md) {
+                    width: max-content;
+                }
+                .link-wrap {
+                    width: 100%;
+                    @include u.breakpoint(md) {
+                        width: max-content;
+                    }
+                    .book-img-wrap {
+                        position: relative;
+                        width: 100%;
+                        height: 200px;
+                        @include u.breakpoint(md) {
+                            width: 350px;
+                            height: 240px;   
+                        }
+                    }
+                }
+            }
+        }
+        .right {
+            width: 100%;
+            margin-top: 30px;
+            @include u.breakpoint(md) {
+                width: 47%;
+                margin-top: 0px;
+            }
+            .right-img-wrap {
+                position: relative;
+                width: 100%;
+                height: 400px;
+                @include u.breakpoint(md) {
+                    height: 600px;   
+                }
+            }
+        }
+    }
+    .bottom {
+        width: 100%;
+        padding-top: 20px;
+        margin-top: 70px;
+        border-top: 2px solid #a4c7cd;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+            font-family: var(--font-NotoSerifDevanagari), sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+            color: #a4c7cd;
+            line-height: 1.6;
+            text-align: center;
+            @include u.breakpoint(md) {
+                font-size: 25px;
+            }
+        }
+        ul {
+            list-style-type: disc;
+            margin-top: 20px;
+            li {
+                font-family: var(--font-NotoSerifDevanagari), sans-serif;
+                font-weight: 300;
+                font-size: 16px;
+                color: $white;
+                @include u.breakpoint(md) {
+                    font-size: 20px;
+                }
+            }
+        }
+        .logos {
+            margin-top: 20px;
+            width: 100%;
+            height: 100px;
+            position: relative;
+            @include u.breakpoint(md) {
+                height: 300px;
+            }
+        }
+    }
+}
