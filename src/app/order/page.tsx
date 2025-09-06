@@ -45,7 +45,7 @@ function Order() {
                 <div className='how-to-order'>
                     <div className='item'><div className='number'>1.</div> <div className='desc'>Enter your name, email address, and choose your preferred payment method. Then click “Place Order”.</div></div>
                     <div className='item'><div className='number'>2.</div> <div className='desc'>You will receive an invoice by email within 30 minutes.</div></div>
-                    <div className='item'><div className='number'>3.</div> <div className='desc'>After making payment, kindly send your receipt to drzaradan@zohomail.com. Once confirmed, your book will be delivered to your email within 15 minutes.</div></div>
+                    <div className='item'><div className='number'>3.</div> <div className='desc'>After making payment, kindly send your receipt to drnowzarada@zohomail.com. Once confirmed, your book will be delivered to your email within 15 minutes.</div></div>
                 </div>
             </div>
             <div className='row2-right'>
