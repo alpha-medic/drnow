@@ -119,7 +119,7 @@ function Order() {
                     <p className='reviewed-in'>Reviewed in the United States on July 10, 2025</p>
                     <h5 className='verified'>Verified Purchase</h5>
                     <div className='full-comment'>
-                        <p> I learned a lot from reading this book. I appreciate Dr. Now caring for the obese. So many doctors just don't want to be bothered. He is a great Doctor!</p>
+                        <p> I learned a lot from reading this book. I appreciate Dr. Now caring for the obese. So many doctors just don&apos;t want to be bothered. He is a great Doctor!</p>
                     </div>
                     <p className='final'>3 people found this helpful</p>
                 </div>
@@ -151,7 +151,7 @@ function Order() {
                     <p className='reviewed-in'>Reviewed in the United States on March 28, 2025</p>
                     <h5 className='verified'>Verified Purchase</h5>
                     <div className='full-comment'>
-                        <p>This book has everything from exercising to recipes. It breaks down the cause of obesity and tells you how to slim down. It's a great book. Very easy read.</p>
+                        <p>This book has everything from exercising to recipes. It breaks down the cause of obesity and tells you how to slim down. It&apos;s a great book. Very easy read.</p>
                     </div>
                     <p className='final'>11 people found this helpful</p>
                 </div>
